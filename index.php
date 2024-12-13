@@ -17,7 +17,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html"><p style="font-size:30px;"><b>LONDO</b></p></a>
+        <a class="navbar-brand" href="index.php"><p style="font-size:30px;"><b>LONDO</b></p></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,7 +28,7 @@
                 <a class="nav-item nav-link active" href="#faq">FAQ</a>
                 <a class="nav-item nav-link active" href="#hubungi-kami">Hubungi Kami</a>
                 <a class="nav-item nav-link active" href="author.php">Author</a>
-                <a class="btn btn-outline-success active" href="login.html"><b>Login</b></a>
+                <a class="btn btn-outline-success active" href="login.php"><b>Login</b></a>
             </div>
         </div>
     </nav>
