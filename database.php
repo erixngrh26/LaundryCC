@@ -6,13 +6,12 @@ class database{
            $con = mysqli_init();
             mysqli_ssl_set($con, NULL, NULL, NULL, NULL, NULL);
             if (!mysqli_real_connect(
-                $con, 
-                "laundrysaey.mysql.database.azure.com", 
-                "adminsaey", 
-                "Patraerix26.", 
-                "laundry.sql", 
-                3306, 
-                MYSQLI_CLIENT_SSL
+                $conn,
+                "laundrysaey.mysql.database.azure.com",
+                "laundrysaey",
+                "Patraerix26.",
+                "laundry",
+                3306 
         }
         catch(PDOException $e){
             echo 'Error, dikarenakan ' . $e ->getMessage();
