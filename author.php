@@ -1,3 +1,6 @@
+<?php
+// about_team.php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
