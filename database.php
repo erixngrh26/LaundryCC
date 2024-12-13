@@ -4,7 +4,7 @@ class database{
     {
         try{ 
            $con = mysqli_init();
-            mysqli_ssl_set($con, NULL, NULL, "/path/to/ca-cert.pem", NULL, NULL);
+            mysqli_ssl_set($con, NULL, NULL, NULL, NULL, NULL);
             if (!mysqli_real_connect(
                 $con, 
                 "laundrysaey.mysql.database.azure.com", 
