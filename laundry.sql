@@ -1,4 +1,3 @@
-CREATE DATABASE laundry;
 USE laundry;
 
 CREATE TABLE `users` (
