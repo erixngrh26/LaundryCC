@@ -43,7 +43,7 @@
                 <h6><img src="images/LOGO2.png" width="350px"></h6>
                 <h1><b> Selamat Datang di LONDO</b></h1>
                 <h1>Laundry Online Setiap Hari</h1>
-                <h6><a class="btn btn-primary btn-lg" href="signup.html" role="button">Daftar Sekarang</a></h6>
+                <h6><a class="btn btn-primary btn-lg" href="signup.php" role="button">Daftar Sekarang</a></h6>
             </div>
             <!-- Additional carousel items can be added here -->
         </div>
