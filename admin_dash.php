@@ -12,7 +12,7 @@
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <script src="bootstrap/jquery.dataTables.min.js"></script>
     <script src="bootstrap/dataTables.bootstrap4.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKtmUDqFDJ8-D3F0nJM4bpiD4hAR-fzeo"></script>
 </head>
 
 <body>
