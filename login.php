@@ -1,55 +1,18 @@
-<?php
-session_start();
-require_once "database.php";
-//Memanggil dari kelas database
-$pdo = new database();
-
-//Jika user sudah pernah login maka akan diarahkan ke halaman profile
-if(!isset($_SESSION['email']) == 0 ){
-    header('Location: dashboard.php');
-}
-
-if(isset($_POST['submit'])){
-    //Init
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    //Mengecek apakah loginnya cocok dengan database
-    $login = $pdo -> login($email);
-
-    //Mengecek apakah password cocok
-    if (password_verify($password, $login['password'])){
-        //Memasukkan data ke session
-        $id = $login['id'];
-        $_SESSION['id'] = $login['id'];
-        $_SESSION['name'] = $login['name'];
-        $_SESSION['email'] = $email;
-        $_SESSION['nomortelepon'] = $login['nomor_telepon'];
-        setcookie('user_id', $id, time()+(7 * 24 * 60 * 60), '/');
-        header("Location: dashboard.php");
-    }
-    //Pesan error jika e-mail atau password salah
-    else{
-        echo '<div class="box"><div class="square">';
-        echo("E-mail atau password salah, silahkan ulangi kembali");
-        echo '</div></div>';
-    }
-}
-?>
-
 <!DOCTYPE HTML>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Laundry OnLine</title>
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <link rel="stylesheet" type="text/css" href="css/login_2.css">
 </head>
-
 <body>
     <div class="login-page">
         <div class="form">
             <h1>Login</h1>   
             <br>     
-            <form method="POST">
+            <form method="POST" action="login.php"> <!-- Ganti 'login.php' dengan nama file PHP Anda -->
                 <p>E-Mail :</p>
                 <input type="email" name="email" required placeholder="Masukkan e-mail">
                 <p>Password :</p>
@@ -61,26 +24,35 @@ if(isset($_POST['submit'])){
                 </p>
                 <br>
                 <p>
-                    <a href="signup.php">
-                        Belum mendaftar? Daftar Sekarang!</a>
+                    <a href="signup.php">Belum mendaftar? Daftar Sekarang!</a>
                 </p>
                 <p>
-                    <a href="index.php">
-                        <-- Back to Home</a>
+                    <a href="index.php"><-- Back to Home</a>
                 </p>
             </form>
+            <!-- Pesan error jika e-mail atau password salah -->
+            <div class="box" id="error-message" style="display:none;">
+                <div class="square">
+                    E-mail atau password salah, silahkan ulangi kembali
+                </div>
+            </div>
         </div>
     </div>
-</body>
-<script type="application/javascript">
-    //Untuk memunculkan password di form
-    function myFunction(){
-        var x = document.getElementById("password");
-        if (x.type === "password"){
-            x.type = "text";
-        } 
-        else{
-            x.type = "password";
+    <script type="application/javascript">
+        // Untuk memunculkan password di form
+        function myFunction(){
+            var x = document.getElementById("password");
+            if (x.type === "password"){
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
         }
-    }
-</script>
+
+        // Menampilkan pesan error jika ada
+        function showError() {
+            document.getElementById('error-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
