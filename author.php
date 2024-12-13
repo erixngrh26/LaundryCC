@@ -62,10 +62,28 @@
             font-size: 14px;
             color: #666;
         }
+        .back-to-dashboard {
+            display: block;
+            width: 150px;
+            margin: 20px auto 30px;
+            text-align: center;
+            padding: 10px;
+            background-color: #004aad;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .back-to-dashboard:hover {
+            background-color: #00328d;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+
+        <!-- Back to Dashboard Button -->
+        <a href="index.php" class="back-to-dashboard">Back to Dashboard</a>
 
         <!-- Hero Image -->
         <img src="images/teamgjls.png" alt="Team Hero Image" class="hero-image">
@@ -80,10 +98,10 @@
                 Fitur Utama:
             </p>
             <ul>
-                <li><strong>Pemesan Layanan:</strong>Pelanggan dapat memesan layanan laundry langsung dari website dengan mengisi formulir online yang mudah digunakan.</li>
-                <li><strong>Jadwal Penjemputan & Pengantaran:</strong>Pelanggan dapat memilih waktu penjemputan dan pengantaran pakaian sesuai dengan kebutuhan mereka.</li>
-                <li><strong>Pelacakan Pesanan:</strong>Fitur ini memungkinkan pelanggan untuk melacak status pesanan mereka secara real-time, mulai dari proses pencucian hingga pengantaran.</li>
-                <li><strong>Daftar Layanan & Harga:</strong>Website menampilkan berbagai pilihan layanan, seperti cuci kering, cuci lipat, dan setrika, lengkap dengan informasi harga yang transparan.</li>
+                <li><strong>Pemesan Layanan:</strong> Pelanggan dapat memesan layanan laundry langsung dari website dengan mengisi formulir online yang mudah digunakan.</li>
+                <li><strong>Jadwal Penjemputan & Pengantaran:</strong> Pelanggan dapat memilih waktu penjemputan dan pengantaran pakaian sesuai dengan kebutuhan mereka.</li>
+                <li><strong>Pelacakan Pesanan:</strong> Fitur ini memungkinkan pelanggan untuk melacak status pesanan mereka secara real-time, mulai dari proses pencucian hingga pengantaran.</li>
+                <li><strong>Daftar Layanan & Harga:</strong> Website menampilkan berbagai pilihan layanan, seperti cuci kering, cuci lipat, dan setrika, lengkap dengan informasi harga yang transparan.</li>
             </ul>
             <p>
                 Website ini cocok untuk pelanggan yang memiliki jadwal padat atau kesulitan mengakses layanan laundry tradisional. Dengan desain yang user-friendly dan layanan yang andal, website ini memberikan solusi modern untuk kebutuhan laundry harian.
