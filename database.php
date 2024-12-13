@@ -3,12 +3,6 @@ class database{
     public function __construct()
     {
         try{ 
-           /* $serverName = 'localhost';
-            $userName = 'root';
-            $password = '';
-            $dbName = 'laundry';
-            $this-> pdo = new PDO("mysql:host=$serverName;port=3306;dbname=$dbName",$userName, $password);
-            $this-> pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); */
             $con = mysqli_init();
                 mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
                 mysqli_real_connect($conn, "laundrysaey.mysql.database.azure.com", "adminsaey", "Patraerix26.", "laundry.sql", 3306, MYSQLI_CLIENT_SSL);
