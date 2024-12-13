@@ -3,9 +3,16 @@ class database{
     public function __construct()
     {
         try{ 
-            $con = mysqli_init();
-                mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
-                mysqli_real_connect($conn, "laundrysaey.mysql.database.azure.com", "adminsaey", "Patraerix26.", "laundry.sql", 3306, MYSQLI_CLIENT_SSL);
+           $con = mysqli_init();
+            mysqli_ssl_set($con, NULL, NULL, "/path/to/ca-cert.pem", NULL, NULL);
+            if (!mysqli_real_connect(
+                $con, 
+                "laundrysaey.mysql.database.azure.com", 
+                "adminsaey", 
+                "Patraerix26.", 
+                "laundry.sql", 
+                3306, 
+                MYSQLI_CLIENT_SSL
         }
         catch(PDOException $e){
             echo 'Error, dikarenakan ' . $e ->getMessage();
