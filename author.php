@@ -86,7 +86,7 @@
     <div class="container">
 
         <!-- Back to Dashboard Button -->
-        <a href="index.php" class="back-to-dashboard">Back to Dashboard</a>
+        <a href="https://github.com/erixngrh26/LaundryCC/blob/5e2c88f51d6cc699a079d880da746114456be475/index.php" class="back-to-dashboard">Back to Dashboard</a> 
 
         <!-- Hero Image -->
         <img src="images/teamgjls.png" alt="Team Hero Image" class="hero-image">
