@@ -86,7 +86,7 @@
     <div class="container">
 
         <!-- Back to Dashboard Button -->
-        <a href="v">Back to Dashboard</a> 
+        <a href="v">KEMBALIKAN SAJA</a> 
 
         <!-- Hero Image -->
         <img src="images/teamgjls.png" alt="Team Hero Image" class="hero-image">
