@@ -86,7 +86,7 @@
     <div class="container">
 
         <!-- Back to Dashboard Button -->
-        <a href="login.php">KEMBALIKAN SAJA</a> 
+        <a href="index.php">KEMBALIKAN SAJA</a> 
 
         <!-- Hero Image -->
         <img src="images/teamgjls.png" alt="Team Hero Image" class="hero-image">
