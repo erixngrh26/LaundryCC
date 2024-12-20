@@ -3,9 +3,9 @@ class database{
     public function __construct()
     {
         try{
-            $serverName = 'localhost';
-            $userName = 'root';
-            $password = '';
+            $serverName = 'saeylaundry-server.mysql.database.azure.com';
+            $userName = 'tobkrkkgiz';
+            $password = 'Patraerix26.';
             $dbName = 'laundry';
             $this-> pdo = new PDO("mysql:host=$serverName;port=3306;dbname=$dbName",$userName, $password);
             $this-> pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
