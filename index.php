@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "Database/laundry.sql";
+require_once "laundry";
 //Memanggil kelas database
 $pdo = new database();
 
